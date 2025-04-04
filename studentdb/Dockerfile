@@ -4,7 +4,7 @@ FROM postgres:latest
 RUN mkdir -p /docker-entrypoint-initdb.d
 #copy the SQL dump file to this location, postgres inside the container looks here 
 # by default on startup for postgres .sql or .dmp files
-COPY docker1_dump.sql /docker-entrypoint-initdb.d/
+COPY docker4_dump.sql /docker-entrypoint-initdb.d/
 #enviroment variables for database name,user, and password.
 ENV POSTGRES_DB=studentdb
 ENV POSTGRES_USER=postgres
